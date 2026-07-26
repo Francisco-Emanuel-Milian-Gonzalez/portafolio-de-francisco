@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Francisco Emanuel Milian Gonzalez — Desarrollador web en Guatemala City." />
+  <title>Francisco Milian | Desarrollador Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#top">Frank<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#vistas">Vistas</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. BIENVENIDA -->
+    <section class="hero" id="bienvenida">
+      <div class="hero-media">
+        <img src="assets/img/francisco-full.jpg" alt="Francisco Emanuel Milian Gonzalez" width="1200" height="1600" />
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Desarrollador web · Guatemala City</p>
+        <h1 class="reveal delay-1">Francisco<br />Milian</h1>
+        <p class="hero-line reveal delay-2">Descansa al final, no a mitad del camino.</p>
+        <div class="hero-actions reveal delay-3">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="#contacto">Contactar</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#sobre-mi" aria-label="Ir a sobre mí">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- 2. INFORMACIÓN -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Desarrollador web</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              Mi apodo es Frank. Soy de Guatemala: ambicioso, observador y obsesivo con terminar bien lo que empiezo.
+            </p>
+            <p>
+              Aspiro a llegar lo más lejos posible en tecnología. Me formo en Informática en Kinal y construyo sistemas reales:
+              desde apps de escritorio hasta plataformas web con microservicios, autenticación y bases de datos.
+            </p>
+            <p>
+              Mi meta es seguir creciendo como desarrollador, entregar productos sólidos y demostrar con proyectos
+              lo que soy capaz de construir.
+            </p>
+          </div>
+
+          <aside class="about-facts reveal delay-1">
+            <dl>
+              <div>
+                <dt>Nombre</dt>
+                <dd>Francisco Emanuel Milian Gonzalez</dd>
+              </div>
+              <div>
+                <dt>Edad</dt>
+                <dd>18 años</dd>
+              </div>
+              <div>
+                <dt>Ubicación</dt>
+                <dd>Guatemala City</dd>
+              </div>
+              <div>
+                <dt>Contacto</dt>
+                <dd><a href="mailto:francisemanuel30@gmail.com">francisemanuel30@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Experiencia</dt>
+                <dd>3 años desarrollando</dd>
+              </div>
+              <div>
+                <dt>Formación</dt>
+                <dd>Informática · Kinal</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Stack</p>
+          <h2>Habilidades</h2>
+          <p class="section-sub">Nivel aproximado con las herramientas que uso en mis proyectos.</p>
+        </div>
+
+        <div class="skills" id="skills">
+          <article class="skill reveal">
+            <div class="skill-top">
+              <span>HTML</span>
+              <strong>90%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="90"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-1">
+            <div class="skill-top">
+              <span>CSS</span>
+              <strong>85%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="85"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-2">
+            <div class="skill-top">
+              <span>JavaScript</span>
+              <strong>70%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="70"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-3">
+            <div class="skill-top">
+              <span>React</span>
+              <strong>60%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="60"></span>
+            </div>
+          </article>
+          <article class="skill reveal">
+            <div class="skill-top">
+              <span>Node.js / Express</span>
+              <strong>65%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="65"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-1">
+            <div class="skill-top">
+              <span>Java / JavaFX</span>
+              <strong>70%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="70"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-2">
+            <div class="skill-top">
+              <span>.NET / C#</span>
+              <strong>55%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="55"></span>
+            </div>
+          </article>
+          <article class="skill reveal delay-3">
+            <div class="skill-top">
+              <span>PostgreSQL / MongoDB</span>
+              <strong>60%</strong>
+            </div>
+            <div class="skill-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill-fill" data-level="60"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN Y EXPERIENCIA -->
+    <section class="section" id="trayectoria">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Curriculum</p>
+          <h2>Educación y experiencia</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-mark"></span>
+            <p class="timeline-meta">Formación actual</p>
+            <h3>Informática — Kinal</h3>
+            <p>Carrera técnica enfocada en desarrollo de software, bases de datos y construcción de proyectos reales.</p>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <span class="timeline-mark"></span>
+            <p class="timeline-meta">Certificaciones</p>
+            <h3>Diplomas Cisco</h3>
+            <p>Formación complementaria en redes y fundamentos tecnológicos con certificación Cisco.</p>
+          </article>
+          <article class="timeline-item reveal delay-2">
+            <span class="timeline-mark"></span>
+            <p class="timeline-meta">Experiencia</p>
+            <h3>3 años desarrollando</h3>
+            <p>Desarrollo continuo de aplicaciones web, APIs y sistemas de escritorio en contextos académicos y de proyecto.</p>
+          </article>
+          <article class="timeline-item reveal delay-3">
+            <span class="timeline-mark"></span>
+            <p class="timeline-meta">Proyectos</p>
+            <h3>+5 proyectos escolares importantes</h3>
+            <p>Sistemas de restaurante, banca, opiniones, concesionario y veterinaria — con frontend, backend y bases de datos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISTAS DE PROYECTOS -->
+    <section class="section section-alt" id="vistas">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Galería</p>
+          <h2>Vistas de proyectos</h2>
+          <p class="section-sub">Una mirada rápida a interfaces y atmósfera visual de mi trabajo.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item wide reveal">
+            <img src="assets/img/projects/brasa33.jpg" alt="Vista Brasa 33 — panel principal de restaurante" loading="lazy" />
+            <figcaption>Brasa 33 · Panel principal</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-1">
+            <img src="assets/img/projects/endofline-1.jpg" alt="Vista EndOfLine — exhibición de vehículo" loading="lazy" />
+            <figcaption>EndOfLine · Exhibición</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-2">
+            <img src="assets/img/projects/endofline-2.jpg" alt="Vista EndOfLine — espacio moderno" loading="lazy" />
+            <figcaption>EndOfLine · Interior</figcaption>
+          </figure>
+          <figure class="gallery-item wide reveal">
+            <img src="assets/img/projects/banco33.jpg" alt="Vista Sistema Bancario La 33 — dashboard" loading="lazy" />
+            <figcaption>Banco La 33 · Dashboard</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-1">
+            <img src="assets/img/projects/veterinaria.jpg" alt="Vista Veterinaria FRNK — menú principal" loading="lazy" />
+            <figcaption>Veterinaria FRNK · Menú</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-2">
+            <img src="assets/img/projects/endofline-3.jpg" alt="Vista EndOfLine — área de servicios" loading="lazy" />
+            <figcaption>EndOfLine · Servicios</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portafolio</p>
+          <h2>Proyectos</h2>
+          <p class="section-sub">Proyectos finalizados con descarga del código fuente.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-project>
+            <div class="project-visual project-visual-logo">
+              <img src="assets/img/projects/logo-brasa.png" alt="Logo Brasa 33" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Brasa 33</h3>
+              <p>
+                Sistema de gestión de restaurantes con arquitectura de microservicios: autenticación, menús,
+                pedidos, pagos, reservaciones, inventario y reportes.
+              </p>
+              <p class="learned"><span>Aprendí:</span> microservicios, JWT, React + Vite, APIs REST y PostgreSQL.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>.NET</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <a class="btn btn-primary" href="downloads/Brasa-33.zip" download>Descargar ZIP</a>
+            </div>
+          </article>
+
+          <article class="project reveal delay-1" data-project>
+            <div class="project-visual project-visual-logo">
+              <img src="assets/img/projects/endofline-logo.png" alt="Logo EndOfLine" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>EndOfLine</h3>
+              <p>
+                Plataforma web para concesionario y taller: clientes, empleados, inventario, facturación,
+                membresías, contratos y carrito de compras.
+              </p>
+              <p class="learned"><span>Aprendí:</span> Java web, JSP, MVC y flujos de negocio con interfaz completa.</p>
+              <ul class="tags">
+                <li>Java</li>
+                <li>JSP</li>
+                <li>Bootstrap</li>
+                <li>MVC</li>
+              </ul>
+              <a class="btn btn-primary" href="downloads/EndOfLine.zip" download>Descargar ZIP</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project>
+            <div class="project-visual project-visual-logo">
+              <img src="assets/img/projects/logo-opiniones.png" alt="Logo Gestor de Opiniones" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Gestor de Opiniones</h3>
+              <p>
+                Sistema tipo red social para publicaciones y comentarios, con registro, login JWT,
+                edición de perfil y control de permisos por autor.
+              </p>
+              <p class="learned"><span>Aprendí:</span> separar auth, publicaciones y comentarios en microservicios.</p>
+              <ul class="tags">
+                <li>.NET</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+              </ul>
+              <a class="btn btn-primary" href="downloads/Gestor-de-Opiniones.zip" download>Descargar ZIP</a>
+            </div>
+          </article>
+
+          <article class="project reveal delay-1" data-project>
+            <div class="project-visual project-visual-logo">
+              <img src="assets/img/projects/logo-banco.png" alt="Logo Sistema Bancario La 33" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Sistema Bancario La 33</h3>
+              <p>
+                Banca académica con cuentas, depósitos, retiros, transferencias, notificaciones,
+                reportes y panel administrativo por roles.
+              </p>
+              <p class="learned"><span>Aprendí:</span> roles JWT, MongoDB + PostgreSQL y comunicación entre servicios.</p>
+              <ul class="tags">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>.NET</li>
+                <li>MongoDB</li>
+              </ul>
+              <a class="btn btn-primary" href="downloads/Sistema-Bancario-la-33.zip" download>Descargar ZIP</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-project>
+            <div class="project-visual project-visual-logo">
+              <img src="assets/img/projects/logo-veterinaria.png" alt="Logo Veterinaria FRNK" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3>Veterinaria FRNK</h3>
+              <p>
+                Aplicación de escritorio para clínica veterinaria: mascotas, citas, consultas, facturas,
+                medicamentos, vacunas, empleados y adopciones.
+              </p>
+              <p class="learned"><span>Aprendí:</span> JavaFX, FXML y organización de módulos CRUD por dominio.</p>
+              <ul class="tags">
+                <li>Java</li>
+                <li>JavaFX</li>
+                <li>FXML</li>
+                <li>Desktop</li>
+              </ul>
+              <a class="btn btn-primary" href="downloads/VeterinariaFRNK.zip" download>Descargar ZIP</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-inner reveal">
+        <p class="eyebrow">Conexión</p>
+        <h2>¿Trabajamos juntos?</h2>
+        <p class="section-sub">
+          Escríbeme para proyectos, prácticas o colaboraciones, o conéctate por mis perfiles profesionales.
+        </p>
+        <div class="contact-links">
+          <a class="btn btn-primary btn-lg" href="mailto:francisemanuel30@gmail.com">francisemanuel30@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/francisco-milian-a66a88424/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://candidato.gt.computrabajo.com/candidate/cv/edit/" target="_blank" rel="noopener noreferrer">CompuTrabajo</a>
+        </div>
+        <p class="contact-meta">Guatemala City · Desarrollador web</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Francisco Emanuel Milian Gonzalez</p>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
