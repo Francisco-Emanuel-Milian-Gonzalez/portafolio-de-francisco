@@ -253,13 +253,14 @@ h3 {
   display: grid;
   place-items: end start;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: calc(var(--header) + 2rem) 0 4rem;
 }
 
 .hero-media {
   position: absolute;
   inset: 0;
+  overflow: hidden;
 }
 
 .hero-media img {
@@ -282,20 +283,21 @@ h3 {
 .hero-content {
   position: relative;
   z-index: 2;
-  width: min(var(--max), calc(100% - 2.5rem));
+  width: min(var(--max), calc(100% - 2rem));
   margin-inline: auto;
   padding-bottom: 1rem;
+  overflow: visible;
 }
 
 .hero h1 {
-  font-size: clamp(2.35rem, 11vw, 7rem);
+  font-size: clamp(2rem, 8vw, 7rem);
   font-weight: 800;
-  max-width: none;
-  width: min(100%, 12ch);
-  overflow-wrap: normal;
-  word-break: keep-all;
-  text-wrap: balance;
-  letter-spacing: -0.04em;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  overflow: visible;
 }
 
 .hero-line {
@@ -844,15 +846,24 @@ h3 {
 
   .hero-content {
     padding-bottom: 2.5rem;
+    width: calc(100% - 1.75rem);
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 9.5vw, 3.4rem);
+    /* Escala al ancho disponible para que "Francisco" quepa completo */
+    font-size: min(2.05rem, calc((100vw - 2rem) / 5.4));
     line-height: 1;
+    letter-spacing: -0.06em;
   }
 
   .scroll-hint {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: min(1.85rem, calc((100vw - 1.75rem) / 5.6));
   }
 }
 
